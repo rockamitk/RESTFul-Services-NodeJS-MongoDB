@@ -1,0 +1,16 @@
+<div class="table-responsive" style="padding: 2.5rem 1.5rem 1.5rem;border:1px solid #ccc;overflow-x: auto;min-height: 300px;">
+  <table id="table-container" class="table table-striped table-bordered" style="font-size:13px;">
+    <thead>
+    	<tr>
+			<th>Employee Name</th>
+			<th>Job Role</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<tr *ngFor="let employee of empList">
+    		<td>{{employee.emp_name}}</td>
+    		<td>{{employee.emp_category}}</td>
+    	</tr>
+    </tbody>
+  </table>
+</div>

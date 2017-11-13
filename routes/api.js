@@ -5,11 +5,10 @@ Employee = require('../models/employee');
 Device = require('../models/device');
 Allocation = require('../models/allocation');
 
-router.use(function(req, res, next) {
-    // do logging
-    next(); // make sure we go to the next routes and don't stop here
-});
 
+// router.route('*').get(function(req, res){
+// 	return res.send("APIs url is invalid!");
+// });
 /*
  * Employee APIs Signature
  */
